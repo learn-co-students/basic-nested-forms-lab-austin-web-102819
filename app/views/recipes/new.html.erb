@@ -2,6 +2,7 @@
     <%= r.label :title %>
     <%= r.text_field :title %><br>
 
+    # Initially I couldn't get this to work because i forgot to nest this inside the r enumerable
     <%= r.fields_for :ingredients do |i| %>
         <%= i.label :name %>
         <%= i.text_field :name %>

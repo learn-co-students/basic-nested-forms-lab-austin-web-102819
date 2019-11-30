@@ -8,7 +8,10 @@ class RecipesController < ApplicationController
   end
 
   def new
+    # Create an empty object in which to store data
     @recipe = Recipe.new
+    # Create a recipe with ingredients named "first ingredient"/"second ingredient"
+    # I assume this is so that we can display the text in the form.
     @recipe.ingredients.build(name: "First Ingredient")
     @recipe.ingredients.build(name: "Second Ingredient")
    
